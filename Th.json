@@ -66,7 +66,7 @@
     "url": "",
     "alpha": 0.85
   },
-  "css": "https://raw.githubusercontent.com/Pavly-Talaat/Ana-Discord-theme-/main/slideshow.css",
+  "css": "https://raw.githubusercontent.com/Pavly-Talaat/Ana-Discord-theme-/refs/heads/main/slideshow.css",
   "plus": {"version": "0", "customOverlays": true},
   "spec": 2
 }
