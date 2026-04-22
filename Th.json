@@ -1,12 +1,7 @@
 {
-  "name": "الثيم الاول بعد التعديل 🔥",
-  "description": "كريبتي، مريح للعين، بنفسجي-أحمر-أزرق نيون",
-  "authors": [
-    {
-      "name": "خادم الجحيم",
-      "id": "0"
-    }
-  ],
+  "name": "Neon Hell Symphony 🔥 - CSS Slideshow",
+  "description": "تبديل تلقائي للخلفيات باستخدام CSS animations",
+  "authors": [{"name": "خادم الجحيم", "id": "0"}],
   "semanticColors": {
     "HEADER_PRIMARY": ["#e0e0ff"],
     "HEADER_SECONDARY": ["#a0a0cc"],
@@ -68,12 +63,10 @@
   },
   "background": {
     "blur": 4,
-    "url": "https://i.imgur.com/CSzmbEm.jpeg",
+    "url": "",
     "alpha": 0.85
   },
-  "plus": {
-    "version": "0",
-    "customOverlays": true
-  },
+  "css": "https://raw.githubusercontent.com/Pavly-Talaat/Ana-Discord-theme-/main/slideshow.css",
+  "plus": {"version": "0", "customOverlays": true},
   "spec": 2
 }
