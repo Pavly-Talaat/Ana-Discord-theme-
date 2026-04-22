@@ -1,8 +1,0 @@
-{
-    "name": "ServerCloner",
-    "version": "1.0.0",
-    "description": "انسخ أي سيرفر إلى آخر باستخدام حسابك",
-    "author": "ملك الشياطين",
-    "api": "1.0.0",
-    "main": "index.js"
-}
