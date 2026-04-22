@@ -1,0 +1,26 @@
+@keyframes hellSlideshow {
+  0% { background-image: url('https://i.imgur.com/CSzmbEm.jpeg'); }
+  14% { background-image: url('https://media1.tenor.com/m/RaoQ4SRgZNMAAAAC/ass-sexy.gif'); }
+  28% { background-image: url('https://i.imgur.com/nzmxCZj.jpeg'); }
+  42% { background-image: url('https://i.imgur.com/elOhnJJ.jpeg'); }
+  57% { background-image: url('https://media1.tenor.com/m/pL8t5v65cYIAAAAC/seyeon-fruitseyeon-asian-girl-cute.gif'); }
+  71% { background-image: url('https://media1.tenor.com/m/iDsm5bg4JcMAAAAd/cute-girl-japan.gif'); }
+  85% { background-image: url('https://media1.tenor.com/m/-VuHT84kBcwAAAAC/hayoung-v-sexy-girl-big-boobs.gif'); }
+  100% { background-image: url('https://i.imgur.com/CSzmbEm.jpeg'); }
+}
+
+/* تطبيق الحركة على خلفية ديسكورد */
+.theme-dark,
+.theme-light,
+[class*="background"]:not([class*="layer"]) {
+  animation: hellSlideshow 42s infinite !important;
+  background-size: cover !important;
+  background-position: center !important;
+  transition: background-image 1s ease-in-out !important;
+}
+
+/* إخفاء الخلفية الأصلية */
+#app-mount > .bg,
+.bg {
+  opacity: 0 !important;
+}
