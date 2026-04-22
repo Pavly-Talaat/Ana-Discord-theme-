@@ -1,0 +1,84 @@
+{
+  "name": "3amk pavly 2 🔥",
+  "description": "زجاج مجمد مع تأثيرات ضبابية وألوان متدرجة - معدل للجحيم",
+  "authors": [
+    {
+      "name": "Gibbu",
+      "id": "174868361040232448"
+    }
+  ],
+  "semanticColors": {
+    "HEADER_PRIMARY": ["#ffffff"],
+    "HEADER_SECONDARY": ["#b9bbbe"],
+    "TEXT_NORMAL": ["#dcddde"],
+    "TEXT_MUTED": ["#72767d"],
+    "INTERACTIVE_NORMAL": ["#b9bbbe"],
+    "INTERACTIVE_HOVER": ["#ffffff"],
+    "INTERACTIVE_ACTIVE": ["#ffffff"],
+    "INTERACTIVE_MUTED": ["#4f545c"],
+    "BACKGROUND_PRIMARY": ["rgba(0, 0, 0, 0.4)"],
+    "BACKGROUND_SECONDARY": ["rgba(0, 0, 0, 0.3)"],
+    "BACKGROUND_SECONDARY_ALT": ["rgba(32, 34, 37, 0.6)"],
+    "BACKGROUND_TERTIARY": ["rgba(0, 0, 0, 0.5)"],
+    "BACKGROUND_ACCENT": ["#673ab7"],
+    "BACKGROUND_FLOATING": ["rgba(0, 0, 0, 0.6)"],
+    "BACKGROUND_MOBILE_PRIMARY": ["rgba(0, 0, 0, 0.7)"],
+    "BG_BASE_TERTIARY": ["rgba(0, 0, 0, 0.5)"],
+    "BACKGROUND_MOBILE_SECONDARY": ["rgba(0, 0, 0, 0.5)"],
+    "BACKGROUND_NESTED_FLOATING": ["rgba(0, 0, 0, 0.5)"],
+    "BACKGROUND_MESSAGE_HOVER": ["rgba(255, 255, 255, 0.05)"],
+    "BACKGROUND_MODIFIER_HOVER": ["rgba(255, 255, 255, 0.1)"],
+    "BACKGROUND_MODIFIER_ACTIVE": ["rgba(255, 255, 255, 0.15)"],
+    "BACKGROUND_MODIFIER_SELECTED": ["rgba(255, 255, 255, 0.2)"],
+    "BACKGROUND_MODIFIER_ACCENT": ["rgba(103, 58, 183, 0.6)"],
+    "SCROLLBAR_THIN_THUMB": ["rgba(255, 255, 255, 0.1)"],
+    "SCROLLBAR_THIN_TRACK": ["transparent"],
+    "SCROLLBAR_AUTO_THUMB": ["rgba(255, 255, 255, 0.1)"],
+    "SCROLLBAR_AUTO_TRACK": ["rgba(0, 0, 0, 0.3)"],
+    "CHANNEL_TEXT_AREA_PLACEHOLDER": ["#72767d"],
+    "CHANNELS_DEFAULT": ["#8e9297"],
+    "TEXT_LINK": ["#00b0f4"],
+    "TEXT_DANGER": ["#ed4245"],
+    "KEYBOARD": ["rgba(0, 0, 0, 0.5)"],
+    "CHANNEL_ICON": ["#b9bbbe"],
+    "CHAT_BACKGROUND": ["rgba(0, 0, 0, 0.3)"],
+    "REDESIGN_ACTIVITY_CARD_BACKGROUND": ["rgba(0, 0, 0, 0.4)"],
+    "CARD_PRIMARY_BG": ["rgba(0, 0, 0, 0.4)"],
+    "CARD_SECONDARY_BG": ["rgba(0, 0, 0, 0.3)"],
+    "REDESIGN_BUTTON_SECONDARY_BACKGROUND": ["rgba(103, 58, 183, 0.8)"],
+    "REDESIGN_CHAT_INPUT_BACKGROUND": ["rgba(0, 0, 0, 0.4)"],
+    "BG_BACKDROP": ["rgba(0, 0, 0, 0.8)"]
+  },
+  "rawColors": {
+    "PRIMARY_600": "#202225",
+    "PRIMARY_700": "#2f3136",
+    "PRIMARY_800": "#36393f",
+    "BRAND_500": "#5865f2",
+    "BRAND_560": "#4752c4",
+    "RED_400": "#ed4245",
+    "YELLOW_300": "#fee75c",
+    "GREEN_600": "#23a55a"
+  },
+  "background": {
+    "blur": 5,
+    "url": "https://i.imgur.com/kYW2H5C.jpg",
+    "alpha": 0.6
+  },
+  "gradient": {
+    "primary": "103,58,183",
+    "secondary": "63,81,181",
+    "direction": "320deg"
+  },
+  "window": {
+    "padding": "20px",
+    "roundness": "10px"
+  },
+  "fonts": {
+    "main": "https://fonts.googleapis.com/css2?family=Whitney&display=swap"
+  },
+  "plus": {
+    "version": "0",
+    "customOverlays": true
+  },
+  "spec": 2
+}
