@@ -1,5 +1,5 @@
 {
-  "name": "Neon Hell Symphony 🔥",
+  "name": "الثيم الاول بعد التعديل 🔥",
   "description": "كريبتي، مريح للعين، بنفسجي-أحمر-أزرق نيون",
   "authors": [
     {
@@ -76,85 +76,4 @@
     "customOverlays": true
   },
   "spec": 2
-}{
-  "name": "Neon Hell Symphony 🔥 - Animated BG",
-  "description": "كريبتي، مريح للعين، بنفسجي-أحمر-أزرق نيون مع تبديل تلقائي لـ 7 خلفيات بتأثير تلاشي",
-  "authors": [
-    {
-      "name": "خادم الجحيم",
-      "id": "0"
-    }
-  ],
-  "semanticColors": {
-    "HEADER_PRIMARY": ["#e0e0ff"],
-    "HEADER_SECONDARY": ["#a0a0cc"],
-    "TEXT_NORMAL": ["#e0e0ff"],
-    "TEXT_MUTED": ["#8888aa"],
-    "INTERACTIVE_NORMAL": ["#b77cff"],
-    "INTERACTIVE_HOVER": ["#ff4d6d"],
-    "INTERACTIVE_ACTIVE": ["#4d9eff"],
-    "INTERACTIVE_MUTED": ["#3a3a55"],
-    "BACKGROUND_PRIMARY": ["#0a0a14"],
-    "BACKGROUND_SECONDARY": ["#111122"],
-    "BACKGROUND_SECONDARY_ALT": ["#1a1a2e"],
-    "BACKGROUND_TERTIARY": ["#16162a"],
-    "BACKGROUND_ACCENT": ["#b77cff"],
-    "BACKGROUND_FLOATING": ["#0a0a14"],
-    "BACKGROUND_MOBILE_PRIMARY": ["#0a0a14"],
-    "BG_BASE_TERTIARY": ["#0a0a14"],
-    "BACKGROUND_MOBILE_SECONDARY": ["#111122"],
-    "BACKGROUND_NESTED_FLOATING": ["#1e1e35"],
-    "BACKGROUND_MESSAGE_HOVER": ["#b77cff15"],
-    "BACKGROUND_MODIFIER_HOVER": ["#ff4d6d20"],
-    "BACKGROUND_MODIFIER_ACTIVE": ["#b77cff30"],
-    "BACKGROUND_MODIFIER_SELECTED": ["#4d9eff25"],
-    "BACKGROUND_MODIFIER_ACCENT": ["#b77cff"],
-    "SCROLLBAR_THIN_THUMB": ["#4d9eff40"],
-    "SCROLLBAR_THIN_TRACK": ["transparent"],
-    "SCROLLBAR_AUTO_THUMB": ["#4d9eff40"],
-    "SCROLLBAR_AUTO_TRACK": ["#1a1a2e"],
-    "CHANNEL_TEXT_AREA_PLACEHOLDER": ["#8888aa"],
-    "CHANNELS_DEFAULT": ["#a0a0cc"],
-    "TEXT_LINK": ["#4d9eff"],
-    "TEXT_DANGER": ["#ff4d6d"],
-    "KEYBOARD": ["#1a1a2e"],
-    "CHANNEL_ICON": ["#b77cff"],
-    "CHAT_BACKGROUND": ["#111122"],
-    "REDESIGN_ACTIVITY_CARD_BACKGROUND": ["#1a1a2e"],
-    "CARD_PRIMARY_BG": ["#0a0a14"],
-    "CARD_SECONDARY_BG": ["#111122"],
-    "REDESIGN_BUTTON_SECONDARY_BACKGROUND": ["#b77cff"],
-    "REDESIGN_CHAT_INPUT_BACKGROUND": ["#0a0a14"],
-    "BG_BACKDROP": ["#0a0a14cc"]
-  },
-  "rawColors": {
-    "PRIMARY_600": "#0a0a14",
-    "PRIMARY_700": "#111122",
-    "PRIMARY_800": "#1a1a2e",
-    "BRAND_500": "#b77cff",
-    "RED_400": "#ff4d6d",
-    "BLUE_400": "#4d9eff",
-    "YELLOW_300": "#b77cff",
-    "GREEN_600": "#4d9eff",
-    "WHITE_500": "#e0e0ff"
-  },
-  "fonts": {
-    "ggsans-Normal": "https://github.com/VodkaXMartini/images/raw/main/Roboto-Regular.ttf?raw=1",
-    "ggsans-Medium": "https://github.com/VodkaXMartini/images/raw/main/Roboto-Regular.ttf?raw=1",
-    "ggsans-Semibold": "https://github.com/VodkaXMartini/images/raw/main/Roboto-Regular.ttf?raw=1",
-    "ggsans-Bold": "https://raw.githubusercontent.com/Quinxxxx/Meloso/main/Meloso-Bold.ttf"
-  },
-  "background": {
-    "blur": 4,
-    "url": "https://i.imgur.com/CSzmbEm.jpeg",
-    "alpha": 0.85
-  },
-  "plus": {
-    "version": "0",
-    "customOverlays": true
-  },
-  "spec": 2,
-  "overlay": {
-    "js": "// قائمة روابط الصور (7 صور)\nconst bgImages = [\n  'https://i.imgur.com/CSzmbEm.jpeg',  // الصورة 1 (الأصلية)\n  'https://media1.tenor.com/m/RaoQ4SRgZNMAAAAC/ass-sexy.gif',  // الصورة 2 - استبدلها برابط صورتك\n  'https://i.imgur.com/nzmxCZj.jpeg',   // الصورة 3 - استبدلها\n  'https://i.imgur.com/elOhnJJ.jpeg',   // الصورة 4 - استبدلها\n  'https://media1.tenor.com/m/pL8t5v65cYIAAAAC/seyeon-fruitseyeon-asian-girl-cute.gif',   // الصورة 5 - استبدلها\n  'https://media1.tenor.com/m/iDsm5bg4JcMAAAAd/cute-girl-japan.gif',   // الصورة 6 - استبدلها\n  'https://media1.tenor.com/m/-VuHT84kBcwAAAAC/hayoung-v-sexy-girl-big-boobs.gif'    // الصورة 7 - استبدلها\n];\n\nlet currentIndex = 0;\nlet overlayDiv = null;\nlet intervalId = null;\nlet isTransitioning = false;\nlet transitionTimeout = null;\nlet imageLoadTimeout = null;\n\n// دالة لإزالة أي خلفية قديمة\nfunction removeExistingBackground() {\n  const existingOverlay = document.getElementById('dynamic-bg-overlay');\n  if (existingOverlay) existingOverlay.remove();\n  if (overlayDiv) overlayDiv = null;\n}\n\n// دالة لإنشاء عنصر الخلفية\nfunction createBackgroundElement(imageUrl, initialOpacity = 0) {\n  const bgDiv = document.createElement('div');\n  bgDiv.id = 'dynamic-bg-overlay';\n  bgDiv.style.position = 'fixed';\n  bgDiv.style.top = '0';\n  bgDiv.style.left = '0';\n  bgDiv.style.width = '100%';\n  bgDiv.style.height = '100%';\n  bgDiv.style.zIndex = '-10';\n  bgDiv.style.backgroundImage = `url('${imageUrl}')`;\n  bgDiv.style.backgroundSize = 'cover';\n  bgDiv.style.backgroundPosition = 'center';\n  bgDiv.style.backgroundRepeat = 'no-repeat';\n  bgDiv.style.opacity = initialOpacity;\n  bgDiv.style.transition = 'opacity 3s ease-in-out'; // 3 ثواني لتلاشي البطيء\n  bgDiv.style.pointerEvents = 'none';\n  return bgDiv;\n}\n\n// دالة لتغيير الصورة مع تأثير تلاشي\nfunction changeBackgroundWithFade() {\n  if (isTransitioning) return;\n  isTransitioning = true;\n\n  // حساب الصورة التالية\n  const nextIndex = (currentIndex + 1) % bgImages.length;\n  const nextImageUrl = bgImages[nextIndex];\n\n  // إنشاء عنصر الخلفية الجديدة (يبدأ شفافاً)\n  const newBg = createBackgroundElement(nextImageUrl, 0);\n  document.body.appendChild(newBg);\n  \n  // التأكد من تحميل الصورة قبل بدء الانتقال\n  const img = new Image();\n  img.onload = () => {\n    if (imageLoadTimeout) clearTimeout(imageLoadTimeout);\n    \n    // إخفاء الخلفية القديمة أولاً\n    if (overlayDiv) {\n      overlayDiv.style.opacity = '0';\n    }\n    \n    // بعد 3 ثواني (مدة التلاشي)، نُظهر الخلفية الجديدة\n    setTimeout(() => {\n      newBg.style.opacity = '1';\n      \n      // نزيل الخلفية القديمة بعد أن تختفي تماماً وتظهر الجديدة\n      setTimeout(() => {\n        if (overlayDiv) overlayDiv.remove();\n        overlayDiv = newBg;\n        currentIndex = nextIndex;\n        isTransitioning = false;\n      }, 3100); // 3.1 ثانية للتأكد\n    }, 50);\n  };\n  \n  img.onerror = () => {\n    console.warn('فشل تحميل الصورة، انتقل إلى التالية');\n    if (imageLoadTimeout) clearTimeout(imageLoadTimeout);\n    // تخطي هذه الصورة في حالة الخطأ\n    imageLoadTimeout = setTimeout(() => {\n      if (newBg) newBg.remove();\n      isTransitioning = false;\n      // تغيير المؤشر إلى التالي تلقائياً\n      currentIndex = (currentIndex + 1) % bgImages.length;\n      changeBackgroundWithFade();\n    }, 100);\n  };\n  \n  img.src = nextImageUrl;\n}\n\n// دالة لبدء العروض\nfunction startSlideshow() {\n  if (intervalId) clearInterval(intervalId);\n  \n  // إعداد الخلفية الأولية\n  removeExistingBackground();\n  overlayDiv = createBackgroundElement(bgImages[0], 1);\n  document.body.appendChild(overlayDiv);\n  currentIndex = 0;\n  \n  // كل 6 ثواني (3 ثواني ثبات + 3 ثواني تلاشي) يتم التبديل\n  intervalId = setInterval(() => {\n    if (!isTransitioning) {\n      changeBackgroundWithFade();\n    }\n  }, 6000); // 6 ثواني كاملة لكل صورة\n}\n\n// مراقبة تحميل الصفحة\nif (document.readyState === 'loading') {\n  document.addEventListener('DOMContentLoaded', startSlideshow);\n} else {\n  startSlideshow();\n}\n\n// تنظيف عند إعادة التحميل\nwindow.addEventListener('beforeunload', () => {\n  if (intervalId) clearInterval(intervalId);\n  if (transitionTimeout) clearTimeout(transitionTimeout);\n  if (imageLoadTimeout) clearTimeout(imageLoadTimeout);\n});"
-  }
 }
